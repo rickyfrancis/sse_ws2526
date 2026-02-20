@@ -245,3 +245,30 @@ Edge cases:
 ## 7) One-sentence exam summary
 
 This Task 1 solution is a **caching proxy**: `Proxy` implements the same `ICalculator` interface as `Calculator`, intercepts calls, reuses cached results for matching operation+operands, and keeps only the last 10 calculations.
+
+---
+
+## 8) How to run as a program (CLI)
+
+Task 1 now also includes a console runner project: `Task1-Cli`.
+
+From `tutorial_02/Task1-Solution`:
+
+- Run tests:
+  - `dotnet test .\Task1-Project\Task1-Solution.csproj`
+
+- Run a single calculator operation:
+  - `dotnet run --project .\Task1-Cli\Task1-Cli.csproj -- mul 3 2`
+  - `dotnet run --project .\Task1-Cli\Task1-Cli.csproj -- div 7.5 2.5`
+
+- Run interactive mode:
+  - `dotnet run --project .\Task1-Cli\Task1-Cli.csproj`
+  - then enter commands like:
+    - `mul 3 2`
+    - `div 6 0`
+    - `exit`
+
+Notes:
+
+- CLI uses the `Proxy` implementation, so repeated operation+operand pairs are served from cache.
+- Use decimal dot format (e.g., `3.5`).

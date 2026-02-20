@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Task2-Cli/Task2-Cli.csproj" />
+  <Project Path="Task2-Project/Task2-Project.csproj" />
+</Solution>

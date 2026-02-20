@@ -2,4 +2,5 @@
   <Folder Name="/Task1-Project/">
     <Project Path="Task1-Project/Task1-Solution.csproj" />
   </Folder>
+  <Project Path="Task1-Cli/Task1-Cli.csproj" />
 </Solution>
